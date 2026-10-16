@@ -7,9 +7,23 @@
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "fi.crowdice.mobile",
+      "buildNumber": "1",
+      "infoPlist": {
+        "NSCameraUsageDescription": "CrowdICE uses the camera so you can photograph river ice conditions for your observations.",
+        "NSPhotoLibraryUsageDescription": "CrowdICE needs access to your photos so you can attach an existing picture to a river-ice observation.",
+        "NSLocationWhenInUseUsageDescription": "CrowdICE uses your location to tag where a river-ice observation was made."
+      }
     },
     "android": {
+      "package": "fi.crowdice.mobile",
+      "versionCode": 1,
+      "permissions": [
+        "CAMERA",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ],
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/android-icon-foreground.png",
